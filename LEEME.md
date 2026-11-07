@@ -4,6 +4,7 @@ Grabaciones del profesor Luis Natera de cada nota del cuatro venezolano, para el
 
 - `cuerda_{la|re|fa_sos|si}_tNN.mp3`: cada cuerda en cada espacio, de `t00` (al aire) a `t17`. MP3 mono, 48 kHz, 128 kb/s.
 - `trasteo/cuerda_{…}_tNN_trasteo.mp3`: otra versión de las notas pisadas, espacios 1 a 14.
+- `largas/cuerda_{…}_tNN.mp3`: **notas largas**, que se dejan sonar hasta que se apagan solas (4 s cada archivo). Para la actividad «Afina con el sonido de tu cuatro» del Afinador. Ver abajo.
 - `fallo.mp3` y `partes/fanfarria.mp3`: sonidos de los módulos.
 
 Las usan el Entrenador del Diapasón, Partes del cuatro, Acordes básicos, los visores de acordes (pieza compartida `SonidoAcorde`) y el Afinador.
@@ -43,3 +44,24 @@ Estaba dentro de la tolerancia (−3,2 cents), pero el Afinador la usa en pareja
 | `trasteo/cuerda_si_t03_trasteo.mp3` (Re4) | −3,3 cents | +3,3 cents | 0,0 |
 
 Volumen compensado (+0,45 dB, RMS igual al original); duración −3 ms; pico igual (≈ −1,2 dBFS; el de `trasteo` en −7,8 dBFS). La pareja Si espacio 3 / Re al aire queda a 1,4 cents. **Originales:** en el commit `8b3d3d0` (antes de esta corrección).
+
+## Notas largas (`largas/`)
+
+Grabadas por el profesor el 7-nov-2026 para la actividad «Afina con el sonido de tu cuatro» del Afinador, que compara dos notas sonando juntas y necesita que la nota se oiga el mayor tiempo posible. Las grabaciones de la carpeta principal no cambian (las usan el Entrenador, Partes del cuatro, Acordes básicos y los visores).
+
+**Cómo se grabaron:** cada nota pulsada una vez y sin apagar, con las otras tres cuerdas apagadas con tela (para que no vibren por simpatía) y sin vibrato; tres tomas por nota (cinco en Si espacio 3, cuatro en La espacio 2). WAV mono, 24 bits, 44,1 kHz.
+
+**Cómo se prepararon:** la toma más limpia y que más suena de cada nota; desde 30 ms antes del ataque, 4,0 s, con una salida de 0,4 s al final; remuestreo a 48 kHz (soxr); pico a −1 dBFS, como las demás; MP3 mono, 128 kb/s. Sin corrección de afinación (todas dentro de ±5 cents).
+
+| Archivo | Nota | Afinación (cents, de 0,9 a 2,3 s) | Baja 40 dB en | Baja 50 dB en |
+|---|---|---|---|---|
+| `cuerda_la_t00.mp3` | La al aire (La3) | −0,2 | 1,64 s | 2,61 s |
+| `cuerda_la_t02.mp3` | La espacio 2 (Si3) | −1,1 | 1,63 s | 2,90 s |
+| `cuerda_si_t00.mp3` | Si al aire (Si3) | −3,0 | 1,69 s | 2,57 s |
+| `cuerda_si_t03.mp3` | Si espacio 3 (Re4) | −1,6 | 1,41 s | 2,13 s |
+| `cuerda_re_t00.mp3` | Re al aire (Re4) | −3,7 | 1,71 s | 2,29 s |
+| `cuerda_re_t04.mp3` | Re espacio 4 (Fa♯4) | +3,8 | 2,05 s | 2,81 s |
+| `cuerda_fa_sos_t00.mp3` | Fa♯ al aire (Fa♯4) | +0,7 | 2,35 s | 3,17 s |
+| `cuerda_fa_sos_t03.mp3` | Fa♯ espacio 3 (La4) | +3,4 | 1,95 s | 2,74 s |
+
+Para comparar: en la carpeta principal, La al aire baja 40 dB en 0,75 s y Fa♯ al aire en 1,37 s. En los primeros 0,3–0,7 s, la afinación de La al aire y de Re al aire se mueve unos cents antes de asentarse (normal al pulsar); por eso se mide de 0,9 a 2,3 s. Los originales WAV los conserva el profesor.
