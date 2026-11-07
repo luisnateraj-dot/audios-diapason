@@ -63,5 +63,6 @@ Grabadas por el profesor el 7-nov-2026 para la actividad «Afina con el sonido d
 | `cuerda_re_t04.mp3` | Re espacio 4 (Fa♯4) | +3,8 | 2,05 s | 2,81 s |
 | `cuerda_fa_sos_t00.mp3` | Fa♯ al aire (Fa♯4) | +0,7 | 2,35 s | 3,17 s |
 | `cuerda_fa_sos_t03.mp3` | Fa♯ espacio 3 (La4) | +3,4 | 1,95 s | 2,74 s |
+| `cuerda_la_arm12.mp3` | Armónico del traste 12 de la cuerda La (La4) | +0,1 | 2,34 s | 3,33 s |
 
-Para comparar: en la carpeta principal, La al aire baja 40 dB en 0,75 s y Fa♯ al aire en 1,37 s. En los primeros 0,3–0,7 s, la afinación de La al aire y de Re al aire se mueve unos cents antes de asentarse (normal al pulsar); por eso se mide de 0,9 a 2,3 s. Los originales WAV los conserva el profesor.
+Para comparar: en la carpeta principal, La al aire baja 40 dB en 0,75 s y Fa♯ al aire en 1,37 s. En los primeros 0,3–0,7 s, la afinación de La al aire y de Re al aire se mueve unos cents antes de asentarse (normal al pulsar); por eso se mide de 0,9 a 2,3 s. **Armónico del traste 12 de La** (agregado el 7-nov-2026): rozando la cuerda La encima del traste 12 y pulsando cerca del puente; cuatro tomas, la tercera elegida (la más larga y la más limpia: el La grave de la cuerda quedó 55 dB por debajo). Da el La4 exacto, sin el error de pisar; sirve para comparar con Fa♯ espacio 3 en la afinación repartida del profesor. Los originales WAV los conserva el profesor.
